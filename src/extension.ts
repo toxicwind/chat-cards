@@ -90,6 +90,30 @@ class ChatCardsProvider implements vscode.ChatCardProvider {
 					}
 				]
 				};
+			case 'skills-list':
+				return {
+					type: 'table',
+					content: '| Skill | Cluster | Description |\n|-------|---------|-------------|\n| pattern-forge | 04_code_intelligence | AST call-graphs, BM25 retrieval & SWE engines |\n| router | 01_orchestration | Root routing & container bootstrap |\n| context7 | 02_research_intel | Documentation & code examples |\n| exa | 02_research_intel | Web search & intelligence |\n| github | 02_research_intel | GitHub integration |\n| huggingface | 02_research_intel | ML models & datasets |\n| pr-review | 04_code_intelligence | Pull request review automation |\n| repo-audit | 04_code_intelligence | Repository audit & analysis |',
+					actions: []
+				};
+			case 'skills-stats':
+				return {
+					type: 'markdown',
+					content: '# Skills Hub Registry Metrics\n\n| Metric | Value |\n|--------|-------|\n| Total Skills | 153 |\n| Staged | 153 |\n| Clusters | 6 + Inbox |\n| SKILL.md Coverage | 153/153 |\n| Tests | 12/12 |\n| Telemetry | 0% (Air-gapped) |\n| License | Apache-2.0 |\n| Root | /home/toxic/estate/skills-hub |',
+					actions: []
+				};
+			case 'skills-route':
+				return {
+					type: 'form',
+					content: '# Route Query to Skills Hub\n\nEnter a task or question to find relevant skills:\n\nQuery: [text input]\n[Route]',
+					actions: [
+					{
+						type: 'button',
+						label: 'Route',
+						id: 'route-query'
+					}
+				]
+				};
 			default:
 				return undefined;
 		}

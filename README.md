@@ -23,6 +23,13 @@ This enhanced version includes specialized cards for pattern-forge workflows:
 - Pattern application to codebases
 - Pattern library management
 
+## Skills Hub Integration
+
+This plugin integrates with the Sovereign Skills Hub (`toxicwind/estate-skills-hub`), a production-grade registry for 153 sovereign AI agent skills:
+- **Skills List**: Browse registered skills grouped by domain cluster
+- **Skills Stats**: View registry metrics and coverage
+- **Skills Route**: Route queries to find relevant skills
+
 ## Installation
 
 ```bash
@@ -44,4 +51,4 @@ MIT
 - [x] VS Code chat language model settings fixed
 - [x] Claude Code configuration for FreeInference
 - [x] GitHub repository created and pushed
-- [x] Skills Hub server configured and operational
+- [x] Skills Hub server configured and operational (toxicwind/estate-skills-hub)
