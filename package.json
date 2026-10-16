@@ -1,0 +1,53 @@
+{
+  "name": "chat-cards",
+  "displayName": "Chat Cards Plugin",
+  "description": "Interactive card deck for GitHub Copilot canvas",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Chat Cards"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatCards": {
+      "cards": [
+        {
+          "id": "welcome",
+          "title": "Welcome",
+          "type": "markdown",
+          "content": "# Welcome to Chat Cards\n\nInteractive card deck for GitHub Copilot canvas."
+        },
+        {
+          "id": "outline",
+          "title": "Numbered Outline",
+          "type": "outline",
+          "content": "1. Welcome\n2. Features\n3. Usage\n4. License"
+        },
+        {
+          "id": "table",
+          "title": "Features Table",
+          "type": "table",
+          "content": "| Feature | Description |\n|---------|-------------|\n| Tab boxes | Interactive tabbed sections |\n| SVG charts | Visual chart representations |\n| Forms | Two-way data collection |\n| Markdown | Rendered documents |\n| Video clips | Short video content |"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "dependencies": {
+    "vscode": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0"
+  }
+}
