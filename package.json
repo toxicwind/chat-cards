@@ -18,19 +18,37 @@
           "id": "welcome",
           "title": "Welcome",
           "type": "markdown",
-          "content": "# Welcome to Chat Cards\n\nInteractive card deck for GitHub Copilot canvas."
+          "content": "# Welcome to Chat Cards Pattern Forge\n\nInteractive card deck for GitHub Copilot canvas with pattern-forge integration."
         },
         {
-          "id": "outline",
-          "title": "Numbered Outline",
+          "id": "pattern-outline",
+          "title": "Pattern Forge Outline",
           "type": "outline",
-          "content": "1. Welcome\n2. Features\n3. Usage\n4. License"
+          "content": "1. Pattern Discovery\n2. Pattern Instantiation\n3. Pattern Composition\n4. Pattern Application\n5. Pattern Library Management"
         },
         {
-          "id": "table",
-          "title": "Features Table",
+          "id": "pattern-table",
+          "title": "Pattern Types Table",
           "type": "table",
-          "content": "| Feature | Description |\n|---------|-------------|\n| Tab boxes | Interactive tabbed sections |\n| SVG charts | Visual chart representations |\n| Forms | Two-way data collection |\n| Markdown | Rendered documents |\n| Video clips | Short video content |"
+          "content": "| Pattern Type | Description |\n|--------------|-------------|\n| Creational | Singleton, Factory, Builder patterns |\n| Structural | Adapter, Decorator, Facade patterns |\n| Behavioral | Observer, Strategy, Command patterns |\n| Architectural | MVC, Microservices, Layered patterns |\n| Domain-specific | Data access, API gateway patterns |"
+        },
+        {
+          "id": "pattern-form",
+          "title": "Pattern Instantiation Form",
+          "type": "form",
+          "content": "Instantiate a Pattern\n\nPattern Type: [dropdown]\nParameters: [dynamic form based on pattern]\nTarget Location: [file path picker]\n[Instantiate Pattern] [Preview]"
+        },
+        {
+          "id": "pattern-visualization",
+          "title": "Pattern Visualization",
+          "type": "markdown",
+          "content": "# Pattern Visualization\n\n![Pattern Diagram](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjRkZGIiBzdHJva2U9IiMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTEwIiB5PSI0MCI+U2luZ2xldG9uPC90ZXh0Pjwvc3ZnPg==)\n\n*Click to configure pattern parameters*"
+        },
+        {
+          "id": "pattern-applied",
+          "title": "Pattern Applied",
+          "type": "markdown",
+          "content": "# Pattern Applied Successfully\n\nThe Singleton pattern has been applied to \`src/services/UserService.ts\`\n\n\`\`\`typescript\nclass UserService {\n  private static instance: UserService;\n\n  private constructor() {}\n\n  public static getInstance(): UserService {\n    if (!UserService.instance) {\n      UserService.instance = new UserService();\n    }\n    return UserService.instance;\n  }\n\n  // ... rest of the class\n}\n\`\`\`\n\n[View Diff] [Apply Another Pattern]"
         }
       ]
     }
